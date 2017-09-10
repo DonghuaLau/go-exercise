@@ -9,9 +9,8 @@ import (
 
 func test1() {
 	//log.Print("call log.Print")
-	//log.Fatal("call log.Fatal")
-	log.Panic("call log.Panic")
-	//panic("call panic")
+	//log.Fatal("call log.Fatal") // call os.Exit(1) after writing the log message
+	log.Panic("call log.Panic") // call panic after writing the log message
 }
 
 func test2() {

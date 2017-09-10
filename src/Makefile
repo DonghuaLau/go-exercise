@@ -1,5 +1,4 @@
 
-
 all: 
 	@echo "Usage: make <target>"
 
