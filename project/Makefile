@@ -1,6 +1,7 @@
 
-export GOPATH=/root/projects/go-exercise/project
+export GOPATH=$(shell pwd)
 export GOBIN=${GOPATH}/bin
+export GOSRC=${GOPATH}/src
 
 all:
 	@echo "Usage: make <target>"
@@ -12,6 +13,11 @@ hello:
 
 main:
 	@cd ${GOPATH}/src/$@; \
+	go install; \
+	cd -;
+
+webapp:
+	@cd ${GOSRC}/$@; \
 	go install; \
 	cd -;
 

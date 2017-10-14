@@ -25,4 +25,3 @@ func main() {
 	fmt.Println(w.Abs())
 	fmt.Println(Abs2(w))
 }
-
