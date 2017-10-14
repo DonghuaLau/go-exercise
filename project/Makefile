@@ -20,7 +20,6 @@ webapp:
 	@cd ${GOSRC}/$@; \
 	go install; \
 	cd -;
-	#go build; \
 
 clean:
 	rm -rf bin/*
